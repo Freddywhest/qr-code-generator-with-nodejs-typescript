@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap');
+/* 
+font-family: 'Changa', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lobster Two', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Shantell Sans', cursive;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    color: black;
+}
+
+nav{
+    height: 50px;
+    background-color: rgb(255, 82, 82);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: white;
+    font-size: 800;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.form-cointainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 10px;
+}
+
+.description{
+    width: 500px;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 7px;
+    margin-bottom: 15px;
+}
+
+.description h2{
+    font-size: 2rem;
+    font-family: 'Changa', sans-serif;
+    font-weight: 800;
+}
+
+.description p:last-child{
+    margin-top: 15px;
+}
+
+.form-control input{
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 1px solid rgb(94, 94, 94);
+    border-radius: 5px;
+}
+
+.form-control input:focus{
+    outline: none;
+    border: 1px solid rgb(94, 94, 94);
+}
+
+.form-control select{
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid rgb(94, 94, 94);
+    border-radius: 5px;
+    color: black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    appearance: none;
+}
+
+.form-control select:focus{
+    outline: none;
+    border: 1px solid rgb(94, 94, 94);
+}
+
+.form-control label{
+    font-size: 1.2rem;
+    font-family: 'Shantell Sans', cursive;
+    font-weight: 500;
+}
+
+.button-control button{
+    padding: 5px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    background-color: rgb(255, 82, 82);
+    color: white;
+    border: 1px solid rgb(255, 82, 82);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-control button:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid rgb(255, 82, 82);
+}
+
+.feedback{
+    font-size: 1.1rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.result-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.result-preview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.saveBtn{
+    margin-top: 20px;
+    margin-bottom: 70px;
+    
+}
+
+.result-preview .imageLink{
+    padding: 5px;
+    font-size: 1.1rem;
+    margin-top: 100px;
+    background-color: rgb(255, 82, 82);
+    color: white;
+    border: 1px solid rgb(255, 82, 82);
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.result-preview .imageLink:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid rgb(255, 82, 82);
+}
+
+@media screen and (max-width: 600px) {
+    .result-preview{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .description{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .form-control{
+        width: 100%;
+    }
+}
